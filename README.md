@@ -31,7 +31,7 @@ Every cipher supports both directions, so decoding is always available.
 Clone the repo and (optionally) install it in editable mode:
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/errmorra/cryptography-basic
 cd cryptography-basic
 pip install -e .
 ```
