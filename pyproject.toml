@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cryptobase"
+version = "1.0.0"
+description = "A small toolkit of classic ciphers with encode/decode support and a CLI."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["cryptography", "cipher", "caesar", "vigenere", "encryption"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Security :: Cryptography",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7.0"]
+
+[project.scripts]
+cryptobase = "cryptobase.cli:main"
+
+[tool.setuptools]
+packages = ["cryptobase"]
